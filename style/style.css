@@ -12,10 +12,67 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .hero {
     height: 100vh;
-    background-color: red;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.heroImg {
+    width: 450px;
+}
+
+.description {
+    padding: 0 80px;
+    margin-bottom: 50px;
+    background-color: red;
+}
+
+.description h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.description button {
+    margin: 0px auto;
+    border: none;
+    background-color: transparent;
+    transition: 1s;
+    color: blue;
+}
+
+.description button:hover {
+    transform: translateX(20%);
+    transition: 1s;
+}
+
+.infograph h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infographContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.infographContainer article{
+    width: 200px;
+    transition: 1s;
+}
+
+.infographContainer article img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.infographContainer article:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
