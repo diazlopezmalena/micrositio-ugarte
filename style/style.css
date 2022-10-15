@@ -1,3 +1,11 @@
+/* 
+#5ec8ce
+#dfe2e7 
+*/
+
+
+
+/* GENERALES */
 * {
     margin: 0;
     padding: 0;
@@ -16,26 +24,116 @@ img {
     max-width: 100%;
 }
 
-.hero {
-    height: 100vh;
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(../fonts/LEMONMILK-Medium.otf) format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'LemonMilk T';
+    src: url(../fonts/LEMONMILK-Light.otf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HeptaSlab';
+    src: url(../fonts/HeptaSlab-SemiBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HeptaSlab B';
+    src: url(../fonts/HeptaSlab-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'LemonMilk';
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'LemonMilk';
+}
+
+/* NAVBAR */
+
+.navbar-brand {
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
     align-items: center;
 }
 
+.navbar-brand div {
+    width: 50px;
+}
+
+.navbar-collapse {
+    flex-grow:unset;
+}
+
+ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
+    gap: 25px;
+}
+
+.navBar {
+    background-color: white !important;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding: 0px 40px;
+}
+
+/* HOME */
+
+.hero {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid white;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    align-self: center;
+}
+
+.hero h2 {
+    font-family: 'LemonMilk T';
+    font-size: 30px;
+    color: #5ec8ce;
+}
+
 .heroImg {
-    width: 450px;
+    width: 400px;
 }
 
 .description {
-    padding: 0 80px;
-    margin-bottom: 50px;
-    background-color: red;
+    padding: 70px 80px;
+    margin-bottom: 80px;
+    background-color: #dfe2e7;
 }
 
 .description h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'LemonMilk';
+    font-size: 60px;
+    color: grey
+}
+
+h2 {
+    font-size: 60px;
+    color: grey
 }
 
 .description button {
@@ -43,12 +141,17 @@ img {
     border: none;
     background-color: transparent;
     transition: 1s;
-    color: blue;
+    color: #5ec8ce;
+    font-family: 'LemonMilk';
 }
 
 .description button:hover {
     transform: translateX(20%);
     transition: 1s;
+}
+
+.infograph {
+    margin-bottom: 80px;
 }
 
 .infograph h2 {
@@ -62,7 +165,7 @@ img {
     gap: 50px;
 }
 
-.infographContainer article{
+.infographContainer article {
     width: 200px;
     transition: 1s;
 }
@@ -72,7 +175,48 @@ img {
     box-shadow: 0px 0px 10px black;
 }
 
-.infographContainer article:hover {
+.infographContainer article:hover, .productions a:hover {
     transform: scale(1.1);
     transition: 1s;
 }
+
+.productions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 80px;
+    background-color: #5ec8ce;
+}
+
+.productions a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LemonMilk';
+    gap: 20px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.776);
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    box-shadow: 0px 0px 10px grey;
+    text-align: center;
+    transition: 2s;
+}
+
+.productions a div {
+    width: 100px;
+}
+
+
+ .carousel {
+    width: 80%;
+    margin: 80px auto;
+    
+ }
+
+ .carousel img {
+    border-radius: 10px;
+ }
