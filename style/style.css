@@ -133,7 +133,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 h2 {
     font-size: 60px;
-    color: grey
+    color: grey;
 }
 
 .description button {
@@ -210,13 +210,84 @@ h2 {
     width: 100px;
 }
 
-
- .carousel {
+.carousel {
     width: 80%;
     margin: 80px auto;
-    
- }
+}
 
- .carousel img {
+.carousel img {
     border-radius: 10px;
- }
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: #dfe2e7;
+    
+    padding: 40px 80px;
+}
+
+.footerOne {
+    align-self: center;
+    text-align: center;
+}
+
+.footerOneImg {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footerOneImg img {
+    width: 50px;
+}
+
+/**** OTHER PAGES ****/
+
+/* INFOGRAFÍAS */
+
+.mainInfografias {
+    position: relative;
+}
+
+.descargarInfo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.descargarInfo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+    transition: 0.8s;
+    color: black;
+    font-family: 'HeptaSlab';
+}
+
+.descargarInfo a:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+.descargarInfo a svg {
+    margin-bottom: 8px;
+}
+
+.descargarInfo a p { 
+    margin: 0px;
+    font-size: 14px;
+}
+
+.contenedorInfo {
+    width: 100%;
+}
