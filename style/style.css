@@ -52,9 +52,10 @@ img {
     font-weight: 600;
 }
 
-h1 {
+h1, .h1Title {
     font-family: 'LemonMilk';
     font-size: 60px;
+    text-align: center;
 }
 
 h2 {
@@ -290,4 +291,174 @@ footer {
 
 .contenedorInfo {
     width: 100%;
+}
+
+/* BIOGRAFÍA */
+
+.biograph {
+    max-width: 900px;
+    margin: 40px auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}
+
+.biograph h2, .biograph img {
+    margin: 25px;
+}
+
+.biograph p {
+    hyphens: auto;
+}
+
+/* LIBROS */
+
+.books {
+    margin: 50px auto;
+}
+
+.bookCards {
+    display: flex;
+    width: 700px;
+    margin: 40px auto;
+    gap: 40px;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.365);
+}
+
+.bookCards button, .articlesContainer article button, .articlesContainerV2 article button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5ec8ce;
+    color: white;
+    font-family: 'HeptaSlab';
+}
+
+
+/* 'HeptaSlab';'LemonMilk T'; */
+
+.spanTitle {
+    font-family: 'HeptaSlab';
+    display: block;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* VIDEOS */
+
+.videos h1 {
+    margin: 50px;
+}
+
+.videosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75vh 60vh 60vh;
+    grid-template-areas: "videoUno videoUno"
+                         "videoDos videoTres"
+                         "videoCuatro videoCinco";
+    gap: 20px;
+    padding: 0px 5% 100px;
+}
+
+.videoUno {
+    grid-area: videoUno;
+    width: 100%;
+}
+
+.videoDos {
+    grid-area: videoDos;
+}
+
+.videoTres {
+    grid-area: videoTres;
+}
+
+.videoCuatro {
+    grid-area: videoCuatro;
+}
+
+.videoCinco {
+    grid-area: videoCinco;
+}
+
+/* ARTÍCULOS */
+
+.articles {
+    background-color: rgba(128, 128, 128, 0.119);
+    padding: 60px 0;
+}
+
+.articles h1 {
+    margin-bottom: 60px;
+}
+
+.articles h2 {
+    font-size: 20px;
+    margin: 60px 50px 30px;
+}
+
+.articlesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.articlesContainer article {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    align-items: center;
+}
+
+.articlesContainerV2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.articlesContainerV2 article {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: rgb(53, 53, 53)
+}
+
+.articlesContainerV2 article p {
+    margin-bottom: 8px;
+}
+
+.articleTitle {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.articleBttn {
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        max-width: 1368px;
+        margin: 0 auto;
+    }
 }
