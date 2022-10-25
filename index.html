@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light navBar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <div>
                         <img src="images/logo-unla.png" alt="">
                     </div>
@@ -29,20 +29,19 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Biografía</a>
+                            <a class="nav-link" href="pages/biografia.html">Biografía</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Infografías
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Uno</a></li>
-                            <li><a class="dropdown-item" href="#">Dos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Tres</a></li>
+                            <li><a class="dropdown-item" href="pages/infografia-ugarte-y-el-socialismo.html">Manuel Ugarte y el Socialismo</a></li>
+                            <li><a class="dropdown-item" href="pages/infografia-ugarte-campaña-hispanoamericana.html">Ugarte camapaña hispanoamericana</a></li>
+                            <li><a class="dropdown-item" href="pages/infografia-vida-de-manuel-ugarte.html">Vida de Manuel Ugarte</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -50,10 +49,9 @@
                             Recursos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Libros</a></li>
-                            <li><a class="dropdown-item" href="#">Artículos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Video</a></li>
+                            <li><a class="dropdown-item" href="pages/libros.html">Libros</a></li>
+                            <li><a class="dropdown-item" href="pages/articulos.html">Artículos</a></li>
+                            <li><a class="dropdown-item" href="pages/videos.html">Video</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -80,13 +78,20 @@
             </div>
         </div>
         <section class="description">
-            <h2>Biografía</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima fuga dolorem labore molestias velit distinctio similique qui quam voluptatem, atque doloribus sint perferendis alias eius hic nihil porro iste!
-            Quas sunt iste est et, veniam beatae, fugiat enim officiis laborum quia sed mollitia maxime dolores esse amet rem delectus temporibus, ratione dicta accusantium. Dolore perspiciatis a cum laboriosam quae!
-            Nihil repellat praesentium consequuntur sint vero fugit debitis perferendis exercitationem provident at alias doloribus vitae id omnis eos sit repudiandae iure, minima, veniam, blanditiis quaerat sed illo eum. Porro, debitis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi quas sunt eveniet, nobis officia ipsam quasi et pariatur qui exercitationem accusantium est maiores excepturi voluptatum tempora corporis? Fugiat, facilis!
-            Eaque, itaque dicta! Voluptatem veniam itaque nulla quas ab reiciendis sed alias corporis ratione quia at quasi repellendus eum maiores, tenetur nihil repudiandae reprehenderit, odio ipsum neque. Laudantium, natus aut.</p>
-            <button>Leer más ➜</button>
+            <div class="descriptionHeader">
+                <div class="descriptionHeaderGif">
+                    <img src="images/icon.gif" alt="">
+                </div>
+                <h2><span class="white">Bio</span>grafía</h2>
+            </div>
+            <div class="containerLayout">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima fuga dolorem labore molestias velit distinctio similique qui quam voluptatem, atque doloribus sint perferendis alias eius hic nihil porro iste!
+                Quas sunt iste est et, veniam beatae, fugiat enim officiis laborum quia sed mollitia maxime dolores esse amet rem delectus temporibus, ratione dicta accusantium. Dolore perspiciatis a cum laboriosam quae!
+                Nihil repellat praesentium consequuntur sint vero fugit debitis perferendis exercitationem provident at alias doloribus vitae id omnis eos sit repudiandae iure, minima, veniam, blanditiis quaerat sed illo eum. Porro, debitis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi quas sunt eveniet, nobis officia ipsam quasi et pariatur qui exercitationem accusantium est maiores excepturi voluptatum tempora corporis? Fugiat, facilis!
+                Eaque, itaque dicta! Voluptatem veniam itaque nulla quas ab reiciendis sed alias corporis ratione quia at quasi repellendus eum maiores, tenetur nihil repudiandae reprehenderit, odio ipsum neque. Laudantium, natus aut.</p>
+                <a href="pages/biografia.html"><button>Leer más ➜</button></a>
+            </div>
         </section>
         <section class="infograph">
             <h2>Infografías</h2>
@@ -109,15 +114,15 @@
             </div>
         </section>
         <section class="productions">
-            <a href="">
+            <a href="pages/libros.html">
                 <div><img src="images/libro.png" alt=""></div>
                 <p>Libros</p>
             </a>
-            <a href="">
+            <a href="pages/articulos.html">
                 <div><img src="images/maquina-de-escribir.png" alt=""></div>
                 <p>Articulos <br>y ponencias</p>
             </a>
-            <a href="">
+            <a href="pages/videos.html">
                 <div><img src="images/camara-de-video.png" alt=""></div>
                 <p>Videos</p>
             </a>

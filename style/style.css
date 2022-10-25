@@ -60,6 +60,8 @@ h1, .h1Title {
 
 h2 {
     font-family: 'LemonMilk';
+    font-size: 60px;
+    color: grey;
 }
 
 /* NAVBAR */
@@ -119,9 +121,36 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .description {
-    padding: 70px 80px;
+    padding: 70px 80px 90px;
     margin-bottom: 80px;
     background-color: #dfe2e7;
+}
+
+.descriptionHeader {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: -20px 0 40px;
+}
+
+.descriptionHeader h2 {
+    z-index: 1;
+}
+
+.white {
+    color: white;
+}
+
+.descriptionHeaderGif {
+    width: 200px;
+    position: absolute;
+    left: 26.5%;
+}
+
+.descriptionHeaderGif img {
+    border-radius: 100px;
 }
 
 .description h2 {
@@ -129,20 +158,16 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     margin-bottom: 30px;
     font-family: 'LemonMilk';
     font-size: 60px;
-    color: grey
-}
-
-h2 {
-    font-size: 60px;
     color: grey;
 }
+
 
 .description button {
     margin: 0px auto;
     border: none;
     background-color: transparent;
     transition: 1s;
-    color: #5ec8ce;
+    color: #E0786D;
     font-family: 'LemonMilk';
 }
 
@@ -304,7 +329,11 @@ footer {
     font-size: 17px;
 }
 
-.biograph h2, .biograph img {
+.biograph h1 {
+    margin: 45px;
+}
+
+.biograph img {
     margin: 25px;
 }
 
@@ -390,7 +419,7 @@ footer {
 /* ARTÍCULOS */
 
 .articles {
-    background-color: rgba(128, 128, 128, 0.119);
+    background-color: rgba(210, 210, 210, 0.119);
     padding: 60px 0;
 }
 
@@ -457,7 +486,7 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
-    main {
+    .containerLayout {
         max-width: 1368px;
         margin: 0 auto;
     }
