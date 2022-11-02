@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manuel Ugarte</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--css-->
     <link rel="stylesheet" href="style/style.css">
+    <!--animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -39,9 +45,9 @@
                             Infografías
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="pages/infografia-ugarte-y-el-socialismo.html">Manuel Ugarte y el Socialismo</a></li>
-                            <li><a class="dropdown-item" href="pages/infografia-ugarte-campaña-hispanoamericana.html">Ugarte camapaña hispanoamericana</a></li>
-                            <li><a class="dropdown-item" href="pages/infografia-vida-de-manuel-ugarte.html">Vida de Manuel Ugarte</a></li>
+                                <li><a class="dropdown-item" href="pages/infografia-vida-de-manuel-ugarte.html">Vida de Manuel Ugarte</a></li>
+                                <li><a class="dropdown-item" href="pages/infografia-ugarte-campaña-hispanoamericana.html">Ugarte camapaña hispanoamericana</a></li>
+                                <li><a class="dropdown-item" href="pages/infografia-ugarte-y-el-socialismo.html">Manuel Ugarte y el Socialismo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -71,7 +77,7 @@
         <div class="hero">
             <div>
                 <h1>Manuel Ugarte</h1>
-                <h2>Pensador de la Patria Grande</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="2000">Pensador de la Patria Grande</h2>
             </div>
             <div class="heroImg">
                 <img src="images/hero.jpg" alt="">
@@ -82,7 +88,7 @@
                 <div class="descriptionHeaderGif">
                     <img src="images/icon.gif" alt="">
                 </div>
-                <h2><span class="white">Bio</span>grafía</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000"><span class="white">Bio</span>grafía</h2>
             </div>
             <div class="containerLayout">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima fuga dolorem labore molestias velit distinctio similique qui quam voluptatem, atque doloribus sint perferendis alias eius hic nihil porro iste!
@@ -93,12 +99,13 @@
                 <a href="pages/biografia.html"><button>Leer más ➜</button></a>
             </div>
         </section>
-        <section class="infograph">
-            <h2>Infografías</h2>
+        <section class="infograph" id="infograph">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Infografías</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Un recorrido por la vida de Manuel Ugarte, sus viajes por América Latina y su vínculo con el Partido Socialista.</p>
             <div class="infographContainer">
                 <article>
-                    <a href="pages/infografia-ugarte-y-el-socialismo.html">
-                        <img src="images/Manuel-Ugarte-y-el-socialismo.jpg" alt="">
+                    <a href="pages/infografia-vida-de-manuel-ugarte.html">
+                        <img src="images/Vida-de-Manuel-Ugarte.jpg" alt="">
                     </a>
                 </article>
                 <article>
@@ -107,25 +114,29 @@
                     </a>
                 </article>
                 <article>
-                    <a href="pages/infografia-vida-de-manuel-ugarte.html">
-                        <img src="images/Vida-de-Manuel-Ugarte.jpg" alt="">
+                    <a href="pages/infografia-ugarte-y-el-socialismo.html">
+                        <img src="images/Manuel-Ugarte-y-el-socialismo.jpg" alt="">
                     </a>
                 </article>
             </div>
         </section>
-        <section class="productions">
-            <a href="pages/libros.html">
-                <div><img src="images/libro.png" alt=""></div>
-                <p>Libros</p>
-            </a>
-            <a href="pages/articulos.html">
-                <div><img src="images/maquina-de-escribir.png" alt=""></div>
-                <p>Articulos <br>y ponencias</p>
-            </a>
-            <a href="pages/videos.html">
-                <div><img src="images/camara-de-video.png" alt=""></div>
-                <p>Videos</p>
-            </a>
+        <section class="productions" id="productions">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Producciones</h2>
+            <p data-aos="fade-up" data-aos-duration="1000">Realizadas por el equipo del CEIL "Manuel Ugarte".</p>
+            <div class="productionsContainer" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="pages/libros.html">
+                    <div><img src="images/libro.png" alt=""></div>
+                    Libros
+                </a>
+                <a href="pages/articulos.html">
+                    <div><img src="images/maquina-de-escribir.png" alt=""></div>
+                    Articulos <br>y ponencias
+                </a>
+                <a href="pages/videos.html">
+                    <div><img src="images/camara-de-video.png" alt=""></div>
+                    Videos
+                </a>
+            </div>
         </section>
         <div>
         <div class="carousel">
@@ -137,24 +148,24 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/beautiful-shot-of-vintage-antique-typewriter.jpg" class="d-block w-100" alt="...">
+                    <img src="images/book-and-magnifying-glass-near-maps.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/old-city-view.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                      <h5>First slide title</h5>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="images/book-and-magnifying-glass-near-maps.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                      <h5>Second slide title</h5>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/book-and-magnifying-glass-near-maps.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide title</h5>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                   </div>
                 </div>
@@ -170,49 +181,79 @@
         </div>
     </main>
     <footer>
-        <div class="footerOne">
-            <div class="footerOneImg">
-                <img src="images/logo-unla.png" alt="">
-   
-                <img src="images/logo-centro-ugarte.jpg" alt="">
+        <div class="footerTwo">
+            <div>
+                <h3>Nuestro sitio</h3>
+                <ul>
+                    <li><a href="index.html">▸ Inicio</a></li>
+                    <li><a href="pages/biografia.html">▸ Biografía</a></li>
+                    <li><a href="#infograph">▾ Infografías</a>
+                        <ul class="subMenu">
+                            <li><a href="pages/infografia-vida-de-manuel-ugarte.html">▸ Vida de Manuel Ugarte</a></li>
+                            <li><a href="pages/infografia-vida-de-manuel-ugarte.html">▸ Ugarte camapaña hispanoamericana</a></li>
+                            <li><a href="pages/infografia-vida-de-manuel-ugarte.html">▸ Manuel Ugarte y el Socialismo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#productions">▾ Recursos</a>
+                        <ul class="subMenu">
+                            <li><a href="pages/libros.html">▸ Libros</a></li>
+                            <li><a href="pages/articulos.html">▸ Artículos</a></li>
+                            <li><a href="pages/videos.html">▸ Videos</a></li>
+                        </ul>
+                    </li>
+                    <li>▾ Bibliografía
+                        <ul class="subMenu">
+                            <li>▸ Antologías</li>
+                        </ul>
+                    </li>        
+
+                </ul>
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat blanditiis adipisci pariatur temporibus fugit amet, maxime aspernatur voluptas mollitia, nam minima enim qui voluptatum aperiam quos ut! Odio, iste praesentium?</p>
+            <div>
+                <h3>Recursos</h3>
+                <ul>
+                    <li>▸ Ejemplo</li>
+                    <li>▸ Ejemplo</li>
+                    <li>▸ Ejemplo</li>
+                    <li>▸ Ejemplo</li>
+                    <li>▸ Ejemplo</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Nuestras apps</h3>
+                <ul>
+                    <li><a href="http://centrougarte.unla.edu.ar/#mugarte">▸ Manuel Ugarte</a></li>
+                    <li> <a href="http://atlaslatinoamericano.unla.edu.ar/">▸ Atlas Latinoamericano</a></li>
+                    <li><a href="http://centrougarte.unla.edu.ar/pais-x-pais.html">▸ País x país</a></li>
+                    <li><a href="http://centrougarte.unla.edu.ar/geohistorias/">▸ Geohistorias</a></li>
+                    <li><a href="http://centrougarte.unla.edu.ar/medios/">▸ Medios para la emancipación</a></li>
+                    <li><a href="http://pensamientos.centrougarte.unla.edu.ar/#/">▸ Pensamientos Latinoamericanos</a></li>
+                </ul>
+
+            </div>
         </div>
-        <div>
-            <h4>Menú</h4>
-            <ul>
-                <li>Inicio</li>
-                <li>Biografías</li>
-                <li>Infografías
-                    <ul>
-                        <li>Uno</li>
-                        <li>Dos</li>
-                        <li>Tres</li>
-                    </ul>
-                </li>
-                <li>Recursos
-                    <ul>
-                        <li>Libros</li>
-                        <li>Artículos</li>
-                        <li>Videos</li>
-                    </ul>
-                </li>
-                <li>Bibliografía
-                    <ul>
-                        <li>Antologías</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h4>Contacto</h4>
-            <ul>
-                <li>WhatsApp</li>
-                <li>Email</li>
-                <li>Intsagram</li>
-            </ul>
+        <div class="footerThree">
+            <div class="footerThreeRedes">
+                <a href=""><img src="images/facebook.svg" alt=""></a>
+                <a href=""><img src="images/instagram.svg" alt=""></a>
+                <a href=""><img src="images/twitter.svg" alt=""></a>
+                <a href=""><img src="images/youtube.svg" alt=""></a>
+            </div>
+            <div>
+                <p>UNIVERSIDAD NACIONAL DE LANÚS (UNLA) CENTRO DE ESTUDIOS DE INTEGRACIÓN LATINOAMERICANA "MANUEL UGARTE"</p>
+                <p>29 DE SEPTIEMBRE 3901 (1826) REMEDIOS DE ESCALADA, LANÚS, PROVINCIA DE BUENOS AIRES, ARGENTINA<br>
+                    TEL.: +54 (011) 5533 5600 - INTERNOS: 5896/5897<br>
+                    INTERNOS: 5896/5897<br>
+                    MAIL: CEIL@UNLA.EDU.AR</p>
+
+            </div>
+
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

@@ -1,6 +1,7 @@
 /* 
 #5ec8ce
-#dfe2e7 
+#dfe2e7
+#E0786D
 */
 
 
@@ -18,10 +19,19 @@ a {
 
 li {
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+ol, ul {
+    padding-left: 0px;
 }
 
 img {
     max-width: 100%;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 @font-face {
@@ -90,6 +100,19 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     padding: 0px 40px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    border-top: solid 3px transparent;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    border-top: solid 3px #5ec8ce;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #5ec8ce;
+}
+
 /* HOME */
 
 .hero {
@@ -98,16 +121,6 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     justify-content: space-around;
     align-items: center;
     position: relative;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    border-top: 30px solid white;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    align-self: center;
 }
 
 .hero h2 {
@@ -178,11 +191,25 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 .infograph {
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
 }
 
 .infograph h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.infograph p, .productions p  {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(136, 136, 136);
+    font-family: 'HeptaSlab';
+    max-width: 500px;
 }
 
 .infographContainer {
@@ -201,17 +228,34 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     box-shadow: 0px 0px 10px black;
 }
 
-.infographContainer article:hover, .productions a:hover {
+.infographContainer article:hover {
     transform: scale(1.1);
     transition: 1s;
 }
 
 .productions {
+    background-color: #5ec8ce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.productions h2 {
+    color: white;
+}
+
+.productions p {
+    color: rgb(238, 238, 238);
+    font-size: 18px;
+    max-width: none;
+}
+
+.productionsContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 40px 80px;
+    gap: 30px;
     background-color: #5ec8ce;
 }
 
@@ -232,6 +276,11 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     transition: 2s;
 }
 
+.productionsContainer a:hover {
+    transform: scale(1.1) rotate(3deg);
+    transition: 1s;
+}
+
 .productions a div {
     width: 100px;
 }
@@ -242,35 +291,83 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .carousel img {
+    border-radius: 10px 10px 0 0;
+}
+
+.carousel-inner {
     border-radius: 10px;
 }
 
+.carousel-control-next {
+    right: -10%;
+}
+
+.carousel-control-prev {
+    left: -10%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/arrow.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/arrow-prev.svg);
+}
+
+.carousel-caption.d-none.d-md-block {
+    background-color: #E0786D;
+    width: 100%;
+    margin: 0px;
+    position: static;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-caption.d-none.d-md-block p {
+    margin: 20px 0 30px;
+}
+
+/* FOOTER */
 
 footer {
+    background-color: #dfe2e7;
+    padding: 40px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    color: black;
+}
+
+.footerTwo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-color: #dfe2e7;
-    
-    padding: 40px 80px;
 }
 
-.footerOne {
-    align-self: center;
-    text-align: center;
-}
-
-.footerOneImg {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+.footerTwo h3 {
+    font-family: 'LemonMilk';
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
-.footerOneImg img {
-    width: 50px;
+.subMenu {
+    padding-left: 20px;
 }
+
+.footerThree {
+    text-align: center;
+}
+
+.footerThreeRedes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0.8;
+    margin: 20px 0;
+}
+
+
+
 
 /**** OTHER PAGES ****/
 
@@ -330,21 +427,30 @@ footer {
 }
 
 .biograph h1 {
-    margin: 45px;
+    margin: 30px 0 50px;
 }
 
 .biograph img {
     margin: 25px;
+    border-radius: 10px;
 }
 
 .biograph p {
     hyphens: auto;
 }
 
+.biographH2 h2 {
+    margin-bottom: 40px;
+}
+
 /* LIBROS */
 
 .books {
-    margin: 50px auto;
+    margin: 70px auto;
+}
+
+.books h1 {
+    margin-bottom: 60px;
 }
 
 .bookCards {
@@ -368,20 +474,22 @@ footer {
 }
 
 
-/* 'HeptaSlab';'LemonMilk T'; */
+/* VIDEOS */
 
 .spanTitle {
     font-family: 'HeptaSlab';
     display: block;
     color: grey;
     font-size: 20px;
-    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* VIDEOS */
-
 .videos h1 {
-    margin: 50px;
+    margin: 7px 0 13px;
+}
+
+.videos span {
+    margin-top: 60px;
 }
 
 .videosContainer {
@@ -392,7 +500,7 @@ footer {
                          "videoDos videoTres"
                          "videoCuatro videoCinco";
     gap: 20px;
-    padding: 0px 5% 100px;
+    padding: 60px 5% 100px;
 }
 
 .videoUno {
@@ -420,11 +528,17 @@ footer {
 
 .articles {
     background-color: rgba(210, 210, 210, 0.119);
-    padding: 60px 0;
+    padding: 70px 0;
 }
 
 .articles h1 {
-    margin-bottom: 60px;
+    font-size: 55px;
+    margin: 0 0 60px;
+}
+
+.articles .spanTitle {
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 .articles h2 {
@@ -432,21 +546,8 @@ footer {
     margin: 60px 50px 30px;
 }
 
-.articlesContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 50px;
-}
-
-.articlesContainer article {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
-    align-items: center;
+.articlesContainerV2 {
+    margin: 50px 0;
 }
 
 .articlesContainerV2 {
@@ -460,7 +561,7 @@ footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.146);
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -478,6 +579,7 @@ footer {
 
 .articleBttn {
     text-align: center;
+    margin: 30px 0 10px
 }
 
 
