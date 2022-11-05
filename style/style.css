@@ -96,8 +96,9 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 .navBar {
     background-color: white !important;
-    box-shadow: 10px 10px 10px lightgrey;
+    box-shadow: 10px 10px 10px rgb(103, 103, 103);
     padding: 0px 40px;
+    z-index: 1;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -121,6 +122,11 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    background-image: url(../images/hero-ugarte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
 }
 
 .hero h2 {
@@ -329,8 +335,6 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 /* FOOTER */
 
 footer {
-    background-color: #dfe2e7;
-    padding: 40px 80px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -338,16 +342,18 @@ footer a {
     color: black;
 }
 
+footer h3 {
+    font-family: 'LemonMilk';
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
 .footerTwo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-}
-
-.footerTwo h3 {
-    font-family: 'LemonMilk';
-    font-size: 21px;
-    margin-bottom: 20px;
+    padding: 40px 80px;
+    background-color: #bec1c6;
 }
 
 .subMenu {
@@ -364,6 +370,22 @@ footer a {
     gap: 20px;
     opacity: 0.8;
     margin: 20px 0;
+}
+
+.footerThreeCopy {
+    font-size: 14px;
+}
+
+.footerOne {
+    background-color: #dfe2e7;
+    padding: 40px 80px;
+    width: 100%;
+}
+
+.footerOneContainer {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
@@ -435,12 +457,44 @@ footer a {
     border-radius: 10px;
 }
 
+.biograph a { 
+    color: #5ec8ce;
+    font-weight: 900;
+}
+
 .biograph p {
     hyphens: auto;
+    font-size: 18px;
+}
+
+.biograph h2, .biograph h3 {
+    font-size: 20px;
+    align-self: flex-start;
+    margin: 40px 0;
 }
 
 .biographH2 h2 {
     margin-bottom: 40px;
+}
+
+.biograph .epigraph {
+    max-width: 600px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.biograph ul li {
+    margin: 10px 70px;
+}
+
+.biograph .quote {
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.biograph .quotesEnd {
+    font-size: 15px;
+    margin-top: -20px;
 }
 
 /* LIBROS */
