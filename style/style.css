@@ -141,8 +141,8 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 .description {
     padding: 70px 80px 90px;
-    margin-bottom: 80px;
-    background-color: #dfe2e7;
+    color: white;
+    background: linear-gradient(#000000, #dfe2e7);
 }
 
 .descriptionHeader {
@@ -156,10 +156,11 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 .descriptionHeader h2 {
     z-index: 1;
+    color: #dfe2e7
 }
 
-.white {
-    color: white;
+.black {
+    color: rgb(0, 0, 0)
 }
 
 .descriptionHeaderGif {
@@ -177,17 +178,14 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     margin-bottom: 30px;
     font-family: 'LemonMilk';
     font-size: 60px;
-    color: grey;
 }
-
 
 .description button {
     margin: 0px auto;
     border: none;
     background-color: transparent;
     transition: 1s;
-    color: #E0786D;
-    font-family: 'LemonMilk';
+    font-family: 'HeptaSlab B';
 }
 
 .description button:hover {
@@ -196,10 +194,10 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .infograph {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
-    
+    background-color: #dfe2e7;
     align-items: center;
 }
 
@@ -240,7 +238,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .productions {
-    background-color: #5ec8ce;
+    background: radial-gradient(#00f2ff78, #56b5ba);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,11 +246,11 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .productions h2 {
-    color: white;
+    color: black;
 }
 
 .productions p {
-    color: rgb(238, 238, 238);
+    color: rgb(41, 41, 41);
     font-size: 18px;
     max-width: none;
 }
@@ -262,7 +260,6 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: #5ec8ce;
 }
 
 .productions a {
@@ -273,27 +270,33 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     font-family: 'LemonMilk';
     gap: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.776);
-    width: 250px;
-    height: 250px;
+    background-color: rgba(255, 255, 255, 0.662);
+    width: 240px;
+    height: 240px;
     border-radius: 500px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
     text-align: center;
     transition: 2s;
 }
 
 .productionsContainer a:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.05) rotate(3deg);
     transition: 1s;
+    backdrop-filter: grayscale(300%);
 }
 
 .productions a div {
     width: 100px;
 }
 
+.carouselContainer {
+    background-color: #d1d1d180;
+    padding: 50px 0;
+}
+
 .carousel {
-    width: 80%;
-    margin: 80px auto;
+    width: 60%;
+    margin:auto;
 }
 
 .carousel img {
@@ -326,20 +329,36 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     margin: 0px;
     position: static;
     border-radius: 0 0 10px 10px;
+    color: black;
+}
+
+.carousel-caption.d-none.d-md-block h5 {
+    font-family: 'LemonMilk';
 }
 
 .carousel-caption.d-none.d-md-block p {
     margin: 20px 0 30px;
+    font-family: 'HeptaSlab';
+    color: rgb(48, 48, 48);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(0, 0, 0, 0.749);
 }
 
 /* FOOTER */
 
 footer {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#d1d1d1, #d1d1d1, #5ec8ce8a, #5ec8ce, #4ea5aa);
 }
 
 footer a {
     color: black;
+}
+
+footer a:hover {
+    color: #5ec8ce;
 }
 
 footer h3 {
@@ -348,12 +367,31 @@ footer h3 {
     margin-bottom: 20px;
 }
 
+footer p {
+    margin-bottom: 0px
+}
+
+.footerOne {
+    color: #000000;
+    padding: 40px 80px;
+    width: 100%;
+}
+
+.footerOneContainer {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.footerOneCopy {
+    margin: 30px 0 15px;
+    font-size: 15px;
+}
+
 .footerTwo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     padding: 40px 80px;
-    background-color: #bec1c6;
 }
 
 .subMenu {
@@ -362,6 +400,7 @@ footer h3 {
 
 .footerThree {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .footerThreeRedes {
@@ -369,24 +408,14 @@ footer h3 {
     justify-content: center;
     gap: 20px;
     opacity: 0.8;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .footerThreeCopy {
     font-size: 14px;
 }
 
-.footerOne {
-    background-color: #dfe2e7;
-    padding: 40px 80px;
-    width: 100%;
-}
 
-.footerOneContainer {
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 
 
