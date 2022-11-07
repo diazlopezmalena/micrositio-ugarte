@@ -96,9 +96,13 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 .navBar {
     background-color: white !important;
-    box-shadow: 10px 10px 10px rgb(103, 103, 103);
+    box-shadow: 10px 10px 10px rgb(172, 172, 172);
     padding: 0px 40px;
     z-index: 1;
+}
+
+.navBarHome {
+    box-shadow: 10px 10px 10px rgb(103, 103, 103);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -145,18 +149,23 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     background: linear-gradient(#000000, #dfe2e7);
 }
 
+.description p {
+    text-shadow: 0 0 0.2em rgb(0, 0, 0)
+}
+
 .descriptionHeader {
     position: relative;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin: -20px 0 40px;
+    margin: -20px auto 40px;
+    width: 520px;
 }
 
 .descriptionHeader h2 {
     z-index: 1;
-    color: #dfe2e7
+    color: #dfe2e7;
 }
 
 .black {
@@ -166,7 +175,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 .descriptionHeaderGif {
     width: 200px;
     position: absolute;
-    left: 26.5%;
+    left: 0px;
 }
 
 .descriptionHeaderGif img {
@@ -199,6 +208,10 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     flex-direction: column;
     background-color: #dfe2e7;
     align-items: center;
+}
+
+.biographH2 {
+    padding-top: 50px;
 }
 
 .infograph h2 {
@@ -290,17 +303,14 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .carouselContainer {
-    background-color: #d1d1d180;
+    background-color: #dfe2e7;
     padding: 50px 0;
 }
 
 .carousel {
     width: 60%;
     margin:auto;
-}
-
-.carousel img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
 .carousel-inner {
@@ -328,7 +338,6 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     width: 100%;
     margin: 0px;
     position: static;
-    border-radius: 0 0 10px 10px;
     color: black;
 }
 
@@ -350,7 +359,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 footer {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(#d1d1d1, #d1d1d1, #5ec8ce8a, #5ec8ce, #4ea5aa);
+    background: linear-gradient(#dfe2e7, #d1d1d1, #5ec8ce8a, #5ec8ce, #4ea5aa);
 }
 
 footer a {
@@ -358,7 +367,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #5ec8ce;
+    font-weight: 600;
+    color: black;
 }
 
 footer h3 {
