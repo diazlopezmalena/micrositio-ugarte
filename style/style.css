@@ -82,7 +82,7 @@ h2 {
 }
 
 .navbar-brand a img {
-    width: 50px;
+    width: 4vw;
 }
 
 .navbar-collapse {
@@ -96,7 +96,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 .navBar {
     background-color: white !important;
     box-shadow: 10px 10px 10px rgb(172, 172, 172);
-    padding: 0px 40px;
+    padding: 0px 8%;
     z-index: 1;
 }
 
@@ -120,25 +120,25 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 /* HOME */
 
 .hero {
-    padding: 40px 80px;
+    padding: 40px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
     position: relative;
-    /* background-image: url(../images/home-ugarte.png); */
-    background-image: url(../images/hero-ugarte.jpg);
+    background-image: url(../images/home-ugarte.png);
+    /* background-image: url(../images/hero-ugarte.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-/* 
+
 .heroText {
     width: 100%;
 }
 
 .heroText h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     font-family: 'LemonMilk';
     color: black;
     text-align: start;
@@ -150,14 +150,13 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     font-size: 4vw;
     font-family: 'LemonMilk T';
     text-shadow: 0px 0px 10px black;
-    margin-bottom: -25px;
-} */
+    margin-bottom: -15px;
+}
 
 .hero h2 {
     font-family: 'HeptaSlab';
-    font-size: 2.5vw;
+    font-size: 2.05vw;
     color: black;
-    padding-left: 10vw;
 }
 
 .heroImg {
@@ -255,6 +254,33 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     max-width: 500px;
 }
 
+.biograph .biographIndex {
+    background-color: #00000014;
+    padding: 30px;
+    border-radius: 10px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.biograph .biographIndex h2 {
+    margin-top: 0px;
+}
+
+.biograph .biographIndex ol li {
+    margin-top: 10px;
+    list-style:decimal;
+    padding-left: 10px;
+}
+
+.biograph .biographIndex ol li a {
+    color: rgb(36, 36, 36);
+    font-family: 'HeptaSlab';
+}
+
+.biograph .biographIndex ol {
+    padding-left: 20px;
+}
+
 .infographContainer {
     display: flex;
     justify-content: center;
@@ -277,19 +303,21 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .productions {
-    background: radial-gradient(#00f2ff78, #56b5ba);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px 80px;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .productions h2 {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .productions p {
-    color: rgb(41, 41, 41);
+    color: rgb(225, 225, 225);
     font-size: 18px;
     max-width: none;
 }
@@ -306,22 +334,30 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'LemonMilk';
-    gap: 20px;
+    font-family: 'HeptaSlab B';
+    
+    text-transform: uppercase;
+    gap: 10px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.662);
+    background: radial-gradient(ellipse at top, rgb(255, 245, 224), transparent),
+                radial-gradient(ellipse at bottom, rgb(241, 221, 180), transparent);
     width: 240px;
     height: 240px;
     border-radius: 500px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.415);
     text-align: center;
-    transition: 2s;
+    transition: 1s;
 }
 
 .productionsContainer a:hover {
-    transform: scale(1.05) rotate(3deg);
+    transform: scale(1.1);
     transition: 1s;
     backdrop-filter: grayscale(300%);
+    background-color: rgb(255, 255, 255);
+}
+
+.productionsContainer:hover > :not(:hover), .infographContainer:hover > :not(:hover)  {
+    opacity: .5;
 }
 
 .productions a div {
@@ -329,7 +365,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .carouselContainer {
-    background-color: #dfe2e7;
+    background-color: #ffffff;
     padding: 50px 0;
 }
 
@@ -360,21 +396,22 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .carousel-caption.d-none.d-md-block {
-    background-color: #E0786D;
+    background-color: #5ec8ce;
     width: 100%;
     margin: 0px;
     position: static;
     color: black;
 }
 
-.carousel-caption.d-none.d-md-block h5 {
-    font-family: 'LemonMilk';
+#carouselExampleCaptions {
+    box-shadow: 0px 0px 10px #0000009c;
 }
 
 .carousel-caption.d-none.d-md-block p {
-    margin: 20px 0 30px;
+    margin: 20px 0 50px;
     font-family: 'HeptaSlab';
-    color: rgb(48, 48, 48);
+    color: black;
+    font-size: 19px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -409,13 +446,37 @@ footer p {
 
 .footerOne {
     color: #000000;
-    padding: 40px 80px;
+    padding: 60px 80px 40px;
     width: 100%;
 }
 
+.footerOne a {
+
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .footerOneContainer {
-    display: flex;
-    justify-content: space-between;    
+    margin-top: 50px;
+}
+
+.footerOneContainer div {
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+.footerOneContainerFirst {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    line-height: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footerOneContainerSecond {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
 }
 
 .footerOneCopy {
@@ -449,6 +510,7 @@ footer p {
 
 .footerThreeCopy {
     font-size: 14px;
+    margin-top: 20px;
 }
 
 
@@ -459,10 +521,15 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .encabezado img {
     width: 200px;
+    margin-right: 40px !important;
+}
+
+.encabezado .encabezadoIMG {
     margin-right: -10px !important;
 }
 
@@ -559,6 +626,65 @@ footer p {
     margin: 10px 70px;
 }
 
+.biographTable {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    border: 1px solid grey;
+    border-left: none;
+    position: relative;
+}
+
+.biographTable p, .tableImg  {
+    border-bottom: solid 1px grey;
+    border-left: solid 1px grey;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.biographTableTitle {
+    background-color: #dfe2e7;
+    font-family: 'HeptaSlab B' !important;
+}
+
+.tableImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableImg img {
+    width: 64px ;
+    height: 64px;
+}
+
+.biograph .tableEnd {
+    position: absolute;
+    width: 100.2%;
+    padding: 30px;
+    bottom: -88px;
+    text-align: center;
+    border: 1px solid grey;
+    border-top: none;
+    background-color: #5ec8ce;
+    color: black;
+    font-family: 'HeptaSlab B';
+    font-size: 20px;
+}
+
+.biograph .tableEnd:hover {
+    background-color:  #57bac0;
+}
+
+.biographTable  .biographTableYear {
+    font-family: 'HeptaSlab';
+    color: grey;
+}
+
+.biograph .quotesEndH3 {
+    margin-top: 140px;
+}
+
 .biograph .quote {
     font-size: 15px;
     margin-left: 70px;
@@ -573,10 +699,6 @@ footer p {
 
 .books {
     margin: 70px auto;
-}
-
-.books h1 {
-    margin-bottom: 60px;
 }
 
 .bookCards {
@@ -633,7 +755,6 @@ footer p {
     margin: 7px 0 13px;
 }
 
-
 .videosContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -642,7 +763,7 @@ footer p {
                          "videoDos videoTres"
                          "videoCuatro videoCinco";
     gap: 20px;
-    padding: 60px 5% 100px;
+    padding: 30px 5% 100px;
 }
 
 .videoUno {
@@ -675,7 +796,6 @@ footer p {
 
 .articles h1 {
     font-size: 55px;
-    margin: 0 0 60px;
 }
 
 .articles .spanTitle {
@@ -743,39 +863,6 @@ footer p {
 .bibliograph ul li {
     list-style:disc;
 }
-
-.bibliographTable {
-    display: grid;
-    grid-template-columns: 20% 20% 60%;
-    border: 1px solid grey;
-    border-left: none;
-}
-
-.bibliographTable p, .tableImg  {
-    border-bottom: solid 1px grey;
-    border-left: solid 1px grey;
-    margin-bottom: 0px;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bibliographTableTitle {
-    background-color: #dfe2e7;
-    font-family: 'HeptaSlab B' !important;
-}
-
-.tableImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.tableImg img {
-    width: 64px ;
-    height: 64px;
-}
-
 
 
 
