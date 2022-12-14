@@ -254,7 +254,7 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     max-width: 500px;
 }
 
-.biograph .biographIndex {
+.biographIndex {
     background-color: #00000014;
     padding: 30px;
     border-radius: 10px;
@@ -262,22 +262,22 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
     width: 100%;
 }
 
-.biograph .biographIndex h2 {
-    margin-top: 0px;
+.biographIndex h2 {
+    margin-top: 0px !important;
 }
 
-.biograph .biographIndex ol li {
+.biographIndex ol li {
     margin-top: 10px;
     list-style:decimal;
     padding-left: 10px;
 }
 
-.biograph .biographIndex ol li a {
+.biographIndex ol li a {
     color: rgb(36, 36, 36);
     font-family: 'HeptaSlab';
 }
 
-.biograph .biographIndex ol {
+.biographIndex ol {
     padding-left: 20px;
 }
 
@@ -626,6 +626,10 @@ footer p {
     margin: 10px 70px;
 }
 
+.biographTableMobile {
+    display: none;
+}
+
 .biographTable {
     display: grid;
     grid-template-columns: 20% 20% 60%;
@@ -904,11 +908,244 @@ footer p {
 
 
 
-
+/***** MEDIA QUERIES *****/
 
 @media screen and (min-width: 1024px) {
     .containerLayout {
         max-width: 1368px;
         margin: 0 auto;
     }
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 700px) {
+
+    .navBar {
+        padding: .5rem 0;
+    }
+
+    .navbar-brand a img {
+        width: 40px;
+    }
+
+    .heroText h1 span {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .heroText h1 {
+        font-size: 60px;
+    }
+
+    .hero h2 {
+        font-size: 15.4px;
+    }
+
+    .description {
+        padding: 70px 30px 20px;
+    }
+
+    .descriptionHeader {
+        width: 100%;
+        display: flex;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .descriptionHeaderGif {
+        width: auto;
+        max-width: 70px;
+        position:static;
+    }
+
+    .description h2, .infograph h2 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .description .black {
+        color: white;
+    }
+
+    .infograph {
+        padding: 20px 30px;
+    }
+
+    .infographContainer {
+        display: block;
+    }
+
+    .infographContainer article {
+        margin-bottom: 30px;
+    }
+
+    .infograph p {
+        margin-top: 10px;
+        hyphens: auto;
+    }
+
+    .productions {
+        padding: 50px 30px;
+    }
+
+    .productions h2 {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .productionsContainer {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-control-next {
+        right: 0%;
+    }
+
+    .carousel-control-prev {
+        left: 0%;
+    }
+
+    .carousel-indicators {
+        bottom: -0%;
+    }
+
+    .d-none {
+        display: block !important;
+    }
+
+    .carousel-caption.d-none.d-md-block p {
+        padding: 0 20px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        margin-bottom: 100px;
+    }
+
+    .footerOne, .footerTwo {
+        padding: 60px 30px;
+    }
+
+    .footerOneContainerFirst {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerOneContainerSecond {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .footerOneCopy {
+        border-top: solid 1px grey;
+        padding-top: 20px;
+        margin-top: 45px;
+    }
+
+    .footerTwo {
+        grid-template-columns: 100%;
+        gap: 30px;
+        justify-items: start;
+    }
+
+    .footerThree {
+        padding: 0 30px 60px;
+    }
+
+
+    /* OTHER PAGES */
+
+    /*Biograph*/
+    .biograph {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .encabezado {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .encabezado .encabezadoIMG {
+        margin-right: 0px !important;
+        margin: 0px;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .encabezado img {
+        width: 140px;
+        opacity: 0.9;
+    }
+
+    .biograph h1 {
+        margin-top: 60px;
+        font-size: 40px !important;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+
+    .infograph h2 {
+        font: 30px;
+        padding: 30px 0;
+    }
+
+    .biograph .quote {
+        margin-left: 0px;
+        color: grey;
+    }
+
+    .biograph ul li, .bibliograph ul li {
+        margin: 10px 0px;
+        hyphens: auto;
+    }
+
+    .biograph ul {
+        max-width: 100% !important;
+    }
+
+    .biographTable {
+        display: block;
+        width: 100%;
+    }
+
+    .biographTable p, .biographTable img, .tableImg {
+        display: none;
+    }
+
+    .biograph .tableEnd {
+        bottom: -120px;
+    }
+
+    .biographTableMobile {
+        display: block;
+        width: 100%;
+    }
+
+    .biographTableMobile img {
+        margin: 0px;
+    }
+
+    .biographIndex {
+        padding: 30px 15px
+    }
+
+    .biographIndex h2 {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .biographIndex ol li {
+        font-size: 14px;
+    }
+
+
 }
