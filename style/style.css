@@ -927,6 +927,32 @@ footer p {
         width: 40px;
     }
 
+    .navbar-light .navbar-toggler {
+        color: transparent;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        border-top: none;
+        color: #5ec8ce;
+    }
+
+    .navbar-nav-scroll {
+        max-height: none;
+    }
+
+    .dropdown-menu {
+        border: none;
+    }
+
+    .dropdown-item {
+        white-space:break-spaces;
+        border-top: 1px solid rgb(212, 212, 212);
+    }
+
+    ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
+        gap: 0px;
+    }
+
     .hero h1 span {
         font-size: 35px;
         margin-bottom: 0px;
@@ -1249,15 +1275,17 @@ footer p {
     .antologiaBooks article {
         width: 100%;
     }
+}
 
+/* Tablet */
 
-    .navbar-light .navbar-toggler {
-        color: transparent;
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+
+    .navbar-brand a img {
+        width: 6vw;
     }
-
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        border-top: none;
-        color: #5ec8ce;
+    .navbar-nav-scroll {
+        max-height: none;
     }
 
     .navbar-nav-scroll {
@@ -1276,5 +1304,75 @@ footer p {
     ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
         gap: 0px;
     }
+
+    .navbar-light .navbar-toggler {
+        color: transparent;
+    }
+    
+    .hero {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "uno img"
+                             "dos img";
+        background-image: url(../images/background-tablet.png);
+    }
+
+    .hero h1 {
+        grid-area: uno;
+        align-self: flex-end;
+        font-size: 9vw;
+    }
+
+    .hero h2 {
+        grid-area: dos;
+        align-self: flex-start;
+        font-size: 2.3vw;
+    }
+
+    .heroIMG {
+        display: block;
+        grid-area: img;
+        align-self: center;
+        margin-left: 30px;
+    }
+
+    .infographContainer {
+        gap: 30px;
+    }
+
+    .productions a {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*OTHER PAGES*/
+    .biograph, .books, .bibliograph {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .bookCards {
+        width: 100%;
+    }
+
+    .articles h1, .videos h1 {
+        font-size: 35px;
+    }
+
+    .articles .spanTitle, .videos .spanTitle {
+        font-size: 20px;
+    }
+
+    .articlesContainerV2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .antologiaBooks {
+        flex-wrap: wrap;
+        gap: 90px
+    }
+
+
 
 }
