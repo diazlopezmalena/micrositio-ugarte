@@ -1064,7 +1064,7 @@ footer p {
     /* OTHER PAGES */
 
     /*Biograph*/
-    .biograph {
+    .biograph, .books, .articles, .videos, .bibliograph, .antologia {
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -1074,7 +1074,17 @@ footer p {
         position: relative;
     }
 
-    .encabezado .encabezadoIMG {
+
+    .books .encabezado h1 {
+        margin-top: 0px;
+    }
+
+    .books .encabezado img {
+        transform: scaleX(-1);
+        opacity: 0.7;
+    }
+
+    .encabezado .encabezadoIMG, .encabezado img {
         margin-right: 0px !important;
         margin: 0px;
         position: absolute;
@@ -1087,10 +1097,19 @@ footer p {
         opacity: 0.9;
     }
 
-    .biograph h1 {
+    .encabezado h1 {
         margin-top: 60px;
         font-size: 40px !important;
         text-shadow: 0px 0px 10px rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .encabezado .spanTitle {
+        text-align: center;
+        font-size: 16px;
+        text-shadow: 0px 0px 10px rgb(255, 255, 255);
+        color: black;
+
     }
 
     .infograph h2 {
@@ -1147,5 +1166,112 @@ footer p {
         font-size: 14px;
     }
 
+   
+
+    .bookCards{
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+        gap: 20px;
+    }
+
+    .bookCardsTwo {
+        gap: 0px;
+    }
+
+    .bookCardsTwoFirst {
+        flex-direction: column-reverse;
+    }
+
+    .bookCardsImg {
+        min-width: auto !important;
+    }
+
+    .bookCardsImg img {
+        border-radius: 5px;
+    }
+
+    .bookCards a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articles {
+        padding-top: 30px;
+    }
+
+    .articles .encabezado img, .videos .encabezado img {
+        left: -20px;
+        top: -10px;
+    }
+
+    .articlesContainerV2 {
+        grid-template-columns: 100%;
+        padding: 0px;
+    }
+
+    .videos h1 {
+        margin-top: 0px;
+    }
+
+    .videosContainer {
+        padding: 0px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "videoUno"
+                             "videoDos"
+                             "videoTres"
+                             "videoCuatro"
+                             "videoCinco";
+    }
+
+    .bibliograph ul {
+        margin-left: 10px;
+    }
+
+    .bibliograph ul li {
+        font-size: 16px;
+    }
+
+    .biographH2 h2, .bibliograph h2 {
+        font-size: 18px;
+    }
+
+    .antologiaBooks {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .antologiaBooks article {
+        width: 100%;
+    }
+
+
+    .navbar-light .navbar-toggler {
+        color: transparent;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        border-top: none;
+        color: #5ec8ce;
+    }
+
+    .navbar-nav-scroll {
+        max-height: none;
+    }
+
+    .dropdown-menu {
+        border: none;
+    }
+
+    .dropdown-item {
+        white-space:break-spaces;
+        border-top: 1px solid rgb(212, 212, 212);
+    }
+
+    ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
+        gap: 0px;
+    }
 
 }
