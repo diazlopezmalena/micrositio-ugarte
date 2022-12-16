@@ -1166,13 +1166,10 @@ footer p {
         font-size: 14px;
     }
 
-   
-
     .bookCards{
         flex-direction: column;
         width: 100%;
         padding: 15px;
-        font-size: 15px;
         gap: 20px;
     }
 
