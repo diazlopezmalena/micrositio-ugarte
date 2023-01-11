@@ -954,8 +954,6 @@ footer p {
     padding-top: 15px;
 }
 
-
-
 /* ERROR ¨*/
 .errorPage {
     display: flex;
@@ -1077,8 +1075,35 @@ footer p {
         gap: 90px
     }
 
+    .authorities {
+        padding: 80px 10px;
+    }
 
+    .teamContainer {
+        grid-template-columns: 2fr 2fr;
+    }
 
+    .footerOneContainerSecond {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .footerOneContainer div {
+        margin-right: 0px;
+    }
+
+    .footerTwoCopyright {
+        padding-left: 0px;
+    }
+
+    .footerTwo {
+        gap: 10px;
+    }
+
+    .footerOne, .footerTwo {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 /* Mobile */
@@ -1228,8 +1253,12 @@ footer p {
         margin-bottom: 100px;
     }
 
-    .footerOne, .footerTwo {
+    .footerOne {
         padding: 60px 30px;
+    }
+    
+    .footerTwo {
+        padding: 0 30px;
     }
 
     .footerOneContainerFirst {
@@ -1241,10 +1270,12 @@ footer p {
         margin-top: 0px;
     }
 
+    .footerTwoCopyright {
+        padding: 0px 0px 60px;
+    }
+
     .footerOneCopy {
-        border-top: solid 1px grey;
-        padding-top: 20px;
-        margin-top: 45px;
+        margin: 0px;
     }
 
     .footerTwo {
@@ -1294,7 +1325,7 @@ footer p {
         opacity: 0.9;
     }
 
-    .encabezado h1 {
+    .encabezado h1, .h1Title {
         margin-top: 60px;
         font-size: 40px !important;
         text-shadow: 0px 0px 10px rgb(255, 255, 255);
@@ -1439,6 +1470,14 @@ footer p {
 
     .antologiaBooks article {
         width: 100%;
+    }
+
+    .authorities {
+        padding: 0px 10px;
+    }
+
+    .teamContainer {
+        grid-template-columns: 100%;
     }
 }
 
