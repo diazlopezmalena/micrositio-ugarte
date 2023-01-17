@@ -710,6 +710,16 @@ footer p {
     margin-top: -20px;
 }
 
+.autorities {
+    margin-top: -20px;
+    margin-bottom: 80px;
+}
+
+.autorities p {
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
 /* LIBROS */
 
 .books {
@@ -1289,7 +1299,7 @@ footer p {
     }
 
 
-    /* OTHER PAGES */
+    /* OTHER PAGES */    
 
     /*Biograph*/
     .biograph, .books, .articles, .videos, .bibliograph, .antologia {
