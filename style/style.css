@@ -1,11 +1,3 @@
-/* 
-#5ec8ce
-#dfe2e7
-#E0786D
-*/
-
-
-
 /* GENERALES */
 * {
     margin: 0;
@@ -39,6 +31,7 @@ p {
     src: url(../fonts/LEMONMILK-Medium.otf) format('truetype');
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
@@ -46,6 +39,7 @@ p {
     src: url(../fonts/LEMONMILK-Light.otf) format('truetype');
     font-style: normal;
     font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
@@ -53,6 +47,7 @@ p {
     src: url(../fonts/HeptaSlab-SemiBold.ttf) format('truetype');
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
@@ -60,6 +55,7 @@ p {
     src: url(../fonts/HeptaSlab-Bold.ttf) format('truetype');
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
 }
 
 h1, .h1Title {
@@ -380,11 +376,11 @@ ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .carousel-control-next {
-    right: -10%;
+    right: -12%;
 }
 
 .carousel-control-prev {
-    left: -10%;
+    left: -12%;
 }
 
 .carousel-control-next-icon {
@@ -908,6 +904,12 @@ footer p {
 .antologiaBooks article {
     width: 19%;
     text-align: center;
+    transition: 0.5s;
+}
+
+.antologiaBooks article:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .antologiaBooks article a {
@@ -986,6 +988,10 @@ footer p {
     .containerLayout {
         max-width: 1368px;
         margin: 0 auto;
+    }
+
+    .bibliograph h1, .antologia h1 {
+        margin-left: -15px;
     }
 }
 
